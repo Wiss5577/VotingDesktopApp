@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="698.0" stylesheets="" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.swipeController">
+   <children>
+      <Button fx:id="right" layoutX="596.0" layoutY="396.0" mnemonicParsing="false" onAction="#rightClicked" prefHeight="38.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../icons/right-arrow%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="candidatimg" fitHeight="246.0" fitWidth="219.0" layoutX="239.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="left" layoutX="42.0" layoutY="396.0" mnemonicParsing="false" onAction="#leftClicked" prefHeight="38.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../icons/left-arrow%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="375.0" layoutY="396.0" prefHeight="30.0" prefWidth="42.0" />
+      <ImageView fx:id="partilogo" fitHeight="67.0" fitWidth="62.0" layoutX="5.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Hyperlink fx:id="lireplus" layoutX="2.0" layoutY="87.0" onAction="#lireolusClicked" prefHeight="24.0" prefWidth="79.0" text="Lire plus..." textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Hyperlink>
+      <Button fx:id="votebutton" cacheShape="false" layoutX="311.0" layoutY="396.0" mnemonicParsing="false" onAction="#voteClicked" prefHeight="38.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../icons/voting-box.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="fullname" alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="333.0" prefHeight="26.0" prefWidth="249.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="20.0" prefHeight="18.0" prefWidth="158.0" style="-fx-background-radius: 20%;" text="Timer">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
